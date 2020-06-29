@@ -1,0 +1,214 @@
+/* -------------------variables-------------------------- */
+:root {
+    --font-logo: Linux Libertine,Georgia,Times,serif;
+    --blue-color: #36c;
+    --black-color: #54595d;
+    --grey-color:#f8f9fa;
+
+}
+
+/* ------------------------termino de variables-------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-color);
+    line-height: 20px;
+    margin: 0px 10px;
+}
+
+
+main div {
+    text-align: center;
+}
+
+main .logo img {
+    width: 200px;
+}
+
+main .logo p {
+    margin: 0px;
+    font-size: 15px;
+    color: #000;
+    font-family: Linux Libertine,Georgia,Times,serif;
+}
+
+
+
+.busqueda {
+    border: 1px solid #c8ccd1;
+    display: flex;
+    width: 445px;
+    height: 42px;
+    margin: 0px auto;
+    position: relative;
+   
+}
+
+.busqueda:hover {
+    border: 1px solid var(--black-color);
+}
+
+
+
+.busqueda input {
+    width: 73%;
+    border: none;
+    font-size: 1.4em;
+    margin-left: 5px;
+    outline: none;
+}
+
+
+.busqueda .desplegar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 7px;
+    margin: 8px 10px 8px 0px;
+    cursor:pointer;
+}
+
+.busqueda .desplegar:hover { 
+    background-color: var(--grey-color);
+}
+
+.busqueda .desplegar:active {
+    border: 1px solid var(--blue-color);
+    background-color: white;
+}
+
+.busqueda .desplegar img {
+    width: 10px;
+    padding-left: 5px;
+}
+
+.busqueda .desplegar p {
+    margin: 0;
+}
+
+.busqueda .lupa {
+     background-color: var(--blue-color);
+     width: 56px;
+     height: 100%;
+     position: absolute;
+     right: 0;
+}
+
+.busqueda .lupa:hover {
+    background-color: #447ff5;
+    border-color: #447ff5;
+}
+
+.busqueda .lupa img {
+    width: 67%;
+    vertical-align: text-top;
+}
+
+
+
+
+
+
+
+/* -----------------------------------segunda sección------------------------- */
+
+
+
+section .container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "wikimedia wikis"
+                         "download wikis";
+    padding: 50px 70px;
+    border-top: 1px solid #c8ccd1;
+}
+
+section .container .wikimedia {
+    
+    display: flex;
+    grid-area: wikimedia;
+    padding: 0 25px 20px 5px;
+}
+
+
+section .container .wikimedia img {
+    width: 42px;
+    height: 40px;
+
+}
+
+section .container .wikimedia p {
+     margin: 0;
+     line-height: 18px;
+     padding: 0 13px;
+}
+
+section .container .download {
+    grid-area: download;
+    display: flex;
+    background-color: var(--grey-color);
+    margin-right: 20px;
+    padding: 10px 15px 5px 0px;
+}
+
+.download .contenido h4 {
+    margin: 0px;
+}
+
+.download .download_logo img {
+    width: 3em;
+    margin: 0px 10px;
+}
+
+.download .btn_apps img {
+    height: 35px;
+}
+
+section .container .wikis {
+    grid-area: wikis;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    row-gap: 20px;
+}
+
+.wikis .wiki {
+    display: flex;
+    margin: 0px 15px 0px 40px;
+}
+
+.wikis .wiki img {
+    width: 40px;
+    height: 45px;
+    margin: 0px 10px;
+}
+
+.wikis .wiki p {
+    margin: 0;
+}
+
+.wikis .wiki .wikititle {
+    color: var(--blue-color);
+    font-size: 14px;
+}
+
+/* --------------------------------------------------------footer----------------------------------------- */
+footer {
+    text-align: center;
+    padding: 0 20px;
+}
+
+footer .link_foot {
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+footer .point::after {
+    content: "\2022";
+    color: var(--black-color);
+    font-size: 15px;
+    margin: 0 8px;
+}
