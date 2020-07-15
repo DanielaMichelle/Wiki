@@ -20,6 +20,7 @@ body {
 }
 
 
+
 main div {
     text-align: center;
 }
@@ -80,7 +81,8 @@ main .logo p {
     background-color: white;
 }
 
-.busqueda .desplegar img {
+.busqueda .desplegar img,
+.idioma-btn .flecha-azul{
     width: 10px;
     padding-left: 5px;
 }
@@ -106,6 +108,32 @@ main .logo p {
     width: 67%;
     vertical-align: text-top;
 }
+
+
+
+.idioma-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37px;
+    color: var(--blue-color);
+    font-weight: 600;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #c8ccd1;
+    margin: 30px auto;
+}
+
+.idioma-btn .translate{
+    height: 20px;
+    padding: 0 10px 0;
+}
+
+.idioma-btn .flecha-azul{
+    padding: 0 10px 0;
+}
+
+
 
 
 
