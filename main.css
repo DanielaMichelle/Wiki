@@ -195,6 +195,105 @@ section .container .wikis {
     font-size: 14px;
 }
 
+
+.planeta {
+    width: 625px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.planeta img {
+    width: 200px;
+    margin: 100px 0;
+}
+
+
+.planeta div{
+   width: 150px;
+   align-items: center;
+   position: absolute;
+   
+}
+
+.planeta div:active {
+    border: 1px solid var(--blue-color);
+}
+
+
+.planeta div a {
+    display: grid;
+}
+
+.planeta div strong {
+    color: var(--blue-color);
+    font-size: 15px;
+    padding-top: 3px;
+    
+}
+
+.planeta div:hover strong{
+    text-decoration: underline;
+}
+
+.planeta div small{
+    font-size: 13px;
+}
+
+
+.planeta .Spanish {
+   top: 45px;
+   left: 112px;
+}
+
+.planeta .Chino {
+   top: 105px;
+   left: 57px;
+}
+
+.planeta .Pycc {
+    top: 167px;
+    left: 43px;
+}
+
+.planeta .Italiano {
+    bottom: 105px;
+    left: 57px;
+}
+
+.planeta .Portugues {
+    bottom: 45px;
+    left: 112px;
+}
+
+.planeta .English {
+    top: 45px;
+    right: 112px;
+}
+ 
+ .planeta .Deu {
+    top: 105px;
+    right: 57px;
+}
+ 
+ .planeta .Frances {
+    top: 167px;
+    right: 43px;
+}
+ 
+ .planeta .Japones {
+    bottom: 105px;
+    right: 57px;
+}
+ 
+ .planeta .Polaco {
+     bottom: 45px;
+     right: 112px;
+}
+    
+    
+
+
+
 /* --------------------------------------------------------footer----------------------------------------- */
 footer {
     text-align: center;
